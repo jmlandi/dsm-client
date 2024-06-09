@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-style: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+.orange-color {
+  color: #FDCC12;
+}
+
+/* HOME CONFIG */
+
+#home {
+  background: rgb(0,0,0);
+  background: linear-gradient(61deg, rgba(0,0,0,1) 0%, rgba(20,33,61,1) 56%);
+  color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home a {
+  color: #FFF;
+  font-style: none;
+  text-decoration: none;
+}
+
+#home-menu {
+  width: 80%;
+  max-width: 400px;
+}
+
+#home-dsm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px 0px 10px 0px;
+}
+
+#home-menu > p {
+  margin: 10px 0px 30px 0px;
+}
+
+.home-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 15px 5px;
+  gap: 10px;
+  border-top: 1px solid #FFF;
+  transition: all 0.2s ease-out;
+}
+
+.home-item-last {
+  border-bottom: 1px solid #FFF;
+}
+
+.home-item:hover {
+  background-color: #FFF;
+  color: #14213D;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+/* LOGIN CONFIG */
+
+/* CLASSES CONFIG */
+
+/* CHECKOUT CONFIG */
+
+/* ORDERS CONFIG */
