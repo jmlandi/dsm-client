@@ -9,7 +9,7 @@
         </div>
         <div id="product-details">
           <h1>Compra Realizada!</h1>
-          <RouterLink :to="dinamicRoute">
+          <RouterLink to="/pedidos">
             <button id="mypurchase-button">Meus Pedidos</button>
           </RouterLink>
           <RouterLink to="/">
