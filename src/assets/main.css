@@ -145,4 +145,105 @@
 
 /* CHECKOUT CONFIG */
 
+#product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#product-details h1 {
+  padding: 15px;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#product-details label {
+  margin: 10px 0px 0px 0px;
+  font-size: 16px;
+}
+
+#product-details .price {
+  font-size: 32px;
+  color: #FCA311;
+}
+
+#product-details #buy-button {
+  font-weight: 700;
+  width: 150px;
+  height: 30px;
+  border-radius: 40px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #FCA311;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#product-details #buy-button:hover {
+  background-color: black;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+#product-details #mypurchase-button {
+  font-weight: 700;
+  width: 150px;
+  height: 30px;
+  border-radius: 40px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #000000;
+  background-color: #AEFBBB;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#product-details #mypurchase-button:hover {
+  background-color: #1D3059;
+  color: white;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.total{
+  padding-top: 15px;
+}
+
+.select{
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  background-color: #FFFFFF;
+  width: 150px;
+  height: 30px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.home-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  border-radius: 40px;
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: #1D3059;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.home-link:hover {
+  background-color: black;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
 /* ORDERS CONFIG */
