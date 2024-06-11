@@ -73,7 +73,75 @@
 
 /* LOGIN CONFIG */
 
-/* CLASSES CONFIG */
+/* AULAS CONFIG */
+#semestre {
+  margin: 10px 50px;
+  background-color: #D9D9D9;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.dia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .dia button{
+   margin: 10px 25px;
+   background: rgba(20,33,61,1);
+   color: white;
+   border: none;
+   font-size: 25px;
+   cursor: pointer;
+}
+.dia .buttonLeft{
+  background: rgb(17, 29, 53)
+
+}
+
+.horarios{
+  width: 300px;
+  height: 300px;
+  background-color: #D9D9D9;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.aula{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  color: black;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  
+}
+.aulaUltimo{
+  border-bottom: none;
+}
+
+.aulaNome{
+  font-size: 18px;
+}
+
+.aulaHorario{
+  font-size: 10px;
+  color: #4e4e4e;
+}
+
+.diaSelecionaodo{
+
+  display: inline;
+}
 
 /* CHECKOUT CONFIG */
 
