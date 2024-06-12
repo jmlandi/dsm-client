@@ -1,7 +1,6 @@
 # DSM Client
-click here to check the [dsm-server app](https://github.com/jmlandi/dsm-server)
-click here to access the [website](https://dsm-client.netlify.app/).
-IMPORTANT: due to database free host, the first request might take 50s, but the app runs correctly after that.
+click here to check the [dsm-server app](https://github.com/jmlandi/dsm-server) or click here to access the [website](https://dsm-client.netlify.app/).
+### 🪧 IMPORTANT: due to database free host, the first request might take 50s, but the app runs correctly after that.
 
 Front-end of "Portal DSM". Here is the [Figma prototype](https://www.figma.com/design/9fEXouiz0rzQGiuiv7eRsW/Portal-DSM?node-id=0-1&t=48LsinvXkTe7G0bv-1).
 
