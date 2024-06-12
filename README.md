@@ -1,5 +1,5 @@
 # DSM Client
-(click here to check the [dsm-server app](https://github.com/jmlandi/dsm-server)
+click here to check the [dsm-server app](https://github.com/jmlandi/dsm-server)
 
 
 Front-end of "Portal DSM". Here is the [Figma prototype](https://www.figma.com/design/9fEXouiz0rzQGiuiv7eRsW/Portal-DSM?node-id=0-1&t=48LsinvXkTe7G0bv-1).
