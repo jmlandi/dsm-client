@@ -81,7 +81,7 @@
                 <p>Portal do Aluno (SIGA)</p>
             </div>
             </a>
-            <div class="home-item home-item-last" @click="logoff()">
+            <div v-if="isLogged" class="home-item home-item-last" @click="logoff()">
                 <img src="../assets/icons/user.png" width="20px">
                 <p>Sair da Conta</p>
             </div>
