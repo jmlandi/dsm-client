@@ -14,6 +14,10 @@
   color: #FDCC12;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 /* HOME CONFIG */
 
 #home {
@@ -73,74 +77,225 @@
 
 /* LOGIN CONFIG */
 
-/* AULAS CONFIG */
-#semestre {
-  margin: 10px 50px;
+#login-screen {
   background-color: #D9D9D9;
-  padding: 10px 25px;
-  border-radius: 10px;
-  cursor: pointer;
-  
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.dia{
+.login-block {
+  width: 320px;
+  gap: 30px;
+  color: #14213D;
+}
+
+#sign-in-btn {
+  margin: 10px;
+  margin-left: 0px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #14213D;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+#sign-in-btn:hover {
+  background-color: #FFF;
+  color: #14213D;
+  transition: all 0.2s ease-out;
+}
+
+#sign-up-btn {
+  margin: 10px;
+  margin-left: 0px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #FDCC12;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+#sign-up-btn:hover {
+  background-color: #FFF;
+  color: #14213D;
+  transition: all 0.2s ease-out;
+}
+
+.login-home-link {
+  font-size: 10px;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: underline;
+  color: #14213D;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.login-footer {
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.login-form {
+  padding: 10px 30px;
+  margin: 30px 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.login-label {
+  font-size: 16px;
+  margin: 10px 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.login-input {
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  margin-left: 0px;
+  padding-left: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.login-btn {
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  border: none;
+  border-radius: 100px;
+  margin: 10px;
+  padding: 15px;
+  margin-left: 0px;
+  padding-left: 10px;
+  border-radius: 150px;
+  background-color: #14213D;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.login-btn:hover {
+  background-color: #FFF;
+  color: #14213D;
+  transition: all 0.2s ease-out;
+}
+
+
+/* AULAS CONFIG */
+
+#semester {
+  padding: 10px 25px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.semester {
+  margin: none;
+  background: none;
+  padding: 8px;
+  border: none;
+}
+
+.day {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
- .dia button{
-   margin: 10px 25px;
-   background: rgba(20,33,61,1);
-   color: white;
-   border: none;
-   font-size: 25px;
-   cursor: pointer;
-}
-.dia .buttonLeft{
-  background: rgb(17, 29, 53)
-
+.day-selected {
+  font-size: 20px;
+  display: inline;
 }
 
-.horarios{
-  width: 300px;
-  height: 300px;
+.day button {
+  margin: 30px 20px;
+  color: #FFF;
+  background: none;
+  border: 1px solid #FFF;
+  font-weight: 300;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-out;
+}
+
+.day button:hover {
+  color: #14213D;
+  background: #FFF;
+  border: 1px solid #FFF;
+  transition: all 0.2s ease-out;
+}
+
+
+.hour {
+  width: 380px;
+  height: 280px;
   background-color: #D9D9D9;
   border-radius: 25px;
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-direction: column;
-  padding: 20px;
+  padding: 18px;
+  margin-bottom: 30px;
 }
 
-.aula{
+.lesson-line {
+  width: 100%;
+  height: 0.5px;
+  background-color: #6a6a6a1e;
+}
+
+.lesson {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   color: black;
-  border-bottom: 1px solid black;
   padding: 20px;
-  
-}
-.aulaUltimo{
-  border-bottom: none;
 }
 
-.aulaNome{
-  font-size: 18px;
+.lesson-name {
+  font-size: 16px;
+  margin: 0px 27px;
+  text-align: center;
+  font-weight: 500;
 }
 
-.aulaHorario{
-  font-size: 10px;
-  color: #4e4e4e;
+.lesson-hour {
+  font-size: 12px;
+  color: #878787;
 }
 
-.diaSelecionaodo{
+.lesson-details {
+  font-size: 11px;
+  color: #000;
+  font-weight: 300;
+  text-align: center;
+}
 
-  display: inline;
+.lesson-block {
+  width: 100%;
+  height: 239.5px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* CHECKOUT CONFIG */
@@ -247,3 +402,31 @@
 }
 
 /* ORDERS CONFIG */
+
+#orders {
+  background: rgb(0,0,0);
+  background: linear-gradient(61deg, rgba(0,0,0,1) 0%, rgba(20,33,61,1) 56%);
+  color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.orders-home-link {
+  color: #FFF;
+}
+
+.order-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  margin: 30px;
+  border: 1px solid #FFF;
+  border-radius: 25px;
+}

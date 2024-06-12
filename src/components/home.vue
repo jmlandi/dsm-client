@@ -10,7 +10,36 @@
         methods: {
             getDinamicRoute() {
                 return this.isLogged ? '/pedidos' : '/login';
+            },
+            getUserSession: async function() {
+                const sessionId = await localStorage?.dsmSessionId || null;
+                if (!sessionId) return this.isLogged = false;
+                try {
+                    const sessionResponse = await fetch(`https://dsm-server.onrender.com/sessions/${sessionId}`);
+                    if (!sessionResponse.ok) {
+                        throw new Error(`HTTP response. Status: ${sessionResponse.status}`);
+                    }
+                    const sessionData = await sessionResponse.json();
+                    const userId = await sessionData.user_id;
+                    const userResponse = await fetch(`https://dsm-server.onrender.com/users/${userId}`);
+                    if (!userResponse.ok) {
+                        throw new Error(`HTTP response. Status: ${userResponse.status}`)
+                    }
+                    const userData = await userResponse.json();
+                    this.isLogged = true;
+                    this.name = await userData.name;
+                    this.dinamicRoute = '/pedidos';
+                } catch (error) {
+                    console.log('Request error:', error);
+                }
+            },
+            logoff() {
+                localStorage.removeItem('dsmSessionId');
+                this.getUserSession();
             }
+        },
+        beforeMount() {
+            this.getUserSession();
         }
     }
 </script>
@@ -37,7 +66,7 @@
             <RouterLink to="/checkout">
                 <div class="home-item">
                     <img src="../assets/icons/cart.png" width="20px">
-                    <p>Compre seu Uniforme!</p>
+                    <p>Compre seu Uniforme</p>
                 </div>
             </RouterLink>
             <RouterLink to="/aulas">
@@ -52,6 +81,10 @@
                 <p>Portal do Aluno (SIGA)</p>
             </div>
             </a>
+            <div class="home-item home-item-last" @click="logoff()">
+                <img src="../assets/icons/user.png" width="20px">
+                <p>Sair da Conta</p>
+            </div>
         </div>
     </div>
 </template>
